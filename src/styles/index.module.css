@@ -63,18 +63,26 @@ body {
 .form{
     display: flex;
     align-items: center;
-    gap: 15px;
+    justify-items: center;
 }
 
-input{
+
+.input{
     width: 80%;
     font-family: Lucida Console, monospace;
     font-size: 30px;
-    height: 20%;
+    height: 50px;
     margin-left: 10%;
     margin-right: 10%;
     border-radius: 10px;
     border: 2px solid #2E4553;
+}
+
+.inputs{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: space-between;
 }
 
 .error{
@@ -103,5 +111,5 @@ input{
 
 .map{
     width: 30vw;
-    height: 30vh ;
+    height: 30vh;
 }

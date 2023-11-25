@@ -1,29 +1,18 @@
 import React, { useState, useEffect } from 'react';
 import Styles from '../styles/index.module.css'
+import {MapAPI} from "../API/MapAPI";
 
 function Map({isMapOpen, lon, lat}) {
     const [map, setMap] = useState(null);
 
-    useEffect(() => {
-
-        if (isMapOpen && !map) {
-            const init = () => {
-                const myMap = new window.ymaps.Map("map", {
-                    center: [lon, lat], // координаты центра карты
-                    zoom: 10 // уровень масштабирования
-                });
-                setMap(myMap);
-            };
-            console.log("dasdasd")
-            window.ymaps.ready(init);
-        }
+    useEffect( () => {
+         MapAPI.initializeMap(isMapOpen, map, setMap, lon, lat)
     }, [isMapOpen, map]);
 
-
     return (
-        <div>
+        <ymaps>
             {isMapOpen && <div id={"map"} className={Styles.map} />}
-        </div>
+        </ymaps>
     );
 }
 
