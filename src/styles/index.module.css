@@ -1,0 +1,107 @@
+h1 {
+    padding-top: 2%;
+    padding-bottom: 2%;
+    text-align: center;
+}
+
+body {
+    font-family: Lucida Console, monospace;
+    height: 100vh;
+    width: 100%;
+    background-color: #C1D9F9;
+    margin: 0;
+    padding: 0;
+}
+
+.main {
+    gap: 30px;
+    flex-wrap: wrap;
+    margin: auto;
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.getRes{
+    height: 10%;
+    font-family: Lucida Console, monospace;
+    font-size: 30px;
+    border-radius: 10px;
+    margin-left: 15%;
+    margin-right: 15%;
+    border: 2px solid #2E4553;
+    background-color: rgba(47, 65, 98, 0.7);
+    color: white;
+}
+
+.getRes:hover{
+    cursor: pointer;
+    background-color: rgba(47, 65, 98, 0.8);
+}
+
+.getRes:active{
+    cursor: grab;
+    background-color: rgba(47, 65, 98, 1);
+}
+
+.closedForm {
+    display: flex;
+    background-color: white;
+    border-radius: 10px;
+    width: auto;
+    height: 50vh;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 10px;
+    min-width: 500px;
+    border: 2px solid #2E4553;
+    box-shadow: 0 0 10px 0 #252525;
+}
+
+.form{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+input{
+    width: 80%;
+    font-family: Lucida Console, monospace;
+    font-size: 30px;
+    height: 20%;
+    margin-left: 10%;
+    margin-right: 10%;
+    border-radius: 10px;
+    border: 2px solid #2E4553;
+}
+
+.error{
+    color: red;
+    text-align: center;
+    font-size: 30px;
+}
+
+.state{
+    width: 128px;
+    height: 128px;
+}
+
+.plus{
+    width: 50px;
+    height: 50px;
+}
+
+.weatherData{
+    line-height: 15px;
+    height: 45%;
+    font-family: Lucida Console, monospace;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.map{
+    width: 30vw;
+    height: 30vh ;
+}
